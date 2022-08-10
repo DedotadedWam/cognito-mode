@@ -1,9 +1,8 @@
 .cache/
 coverage/
-dist/*
-!dist/index.html
 node_modules/
 *.log
+.env
 package-lock.json
 
 # OS generated files
