@@ -1,0 +1,27 @@
+From bce01338765f9973c46367a70e2df99414595ba6 Mon Sep 17 00:00:00 2001
+From: Amitt Dosanjh <amitt.dosanjh@gmail.com>
+Date: Tue, 9 Aug 2022 19:01:16 -0500
+Subject: [PATCH 1/6] Update to React 18
+
+---
+ client/src/index.tsx | 4 +++-
+ 1 file changed, 3 insertions(+), 1 deletion(-)
+
+diff --git a/client/src/index.tsx b/client/src/index.tsx
+index 140ac66..187eca7 100644
+--- a/client/src/index.tsx
++++ b/client/src/index.tsx
+@@ -1,7 +1,9 @@
+ import * as React from "react";
+ import * as ReactDOM from "react-dom";
++import { createRoot } from "react-dom/client";
+ 
+ import App from "./App";
+ 
+ var mountNode = document.getElementById("app");
+-ReactDOM.render(<App />, mountNode);
++const root = createRoot(mountNode!); // createRoot(container!) if you use TypeScript
++root.render(<App />);
+-- 
+2.34.1
+
