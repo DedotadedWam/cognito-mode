@@ -1,2 +1,3 @@
-# cognito-mode
-Personal Website
+# Cognito Mode
+
+Portfolio of my work
